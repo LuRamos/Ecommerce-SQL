@@ -46,48 +46,47 @@ Esta modelagem foi projetada para um sistema de ecommerce completo e otimizado. 
 - `idPedido` (PK)
 - `Data_Pedido`
 - `Descrição`
-- FK para Cliente, Status Pedido e Forma de Pagamento
+- `FK para Cliente, Status Pedido e Forma de Pagamento`
 
 ### **Forma de Pagamento**
 - `idFormaPagamento` (PK)
-- Tipo Pagamento
-- Detalhes Pagamento
-- Valor Total
+- `Tipo Pagamento`
+- `Detalhes Pagamento`
+- `Valor Total`
 
 ### **Status Pedido**
 - `idStatusPedido` (PK)
 - `Descrição` (ENUM: Aguardando Pagamento, Em Transporte, Entregue)
-- FK para Forma de Pagamento e Histórico de Entrega
+- `FK para Forma de Pagamento e Histórico de Entrega`
 
 ### **Entrega**
 - `idEntrega` (PK)
-- Código de Rastreio
-- Data Entrega
-- FK para Status Pedido e Endereço de Entrega
+- `Código de Rastreio`
+- `Data Entrega`
+- `FK para Status Pedido e Endereço de Entrega`
 
 ### **Produto**
 - `idProduto` (PK)
-- Nome
-- Descrição
-- Preço
-- Categoria
+- `Nome`
+- `Descrição`
+- `Preço`
+- `Categoria`
 
 ### **Estoque**
 - `idEstoque` (PK)
-- Local
-- Quantidade
-- FK para Produto
+- `Local`
+- `Quantidade`
+- `FK para Produto`
 
-- ## **Histórico de Entrega**
+- ### **Histórico de Entrega**
 - `idHistoricoEntrega` (PK)
-- `Status_Entrega`: Descrição do status da entrega.
-- `Data_Entrega_Atualizacao`: Data da última atualização do status da entrega.
-- **FK para StatusPedido**: Relacionamento com a tabela de status do pedido para garantir a associação entre o status do pedido e o histórico de entrega.
-- **FK para Endereço**: Relacionamento com o endereço de entrega.
+- `Status_Entrega`
+- `Data_Entrega_Atualizacao`
+- `FK para StatusPedido`
+- `FK para Endereço`
 
 ---
 
----
 
 ## 🔗 Relacionamentos
 
