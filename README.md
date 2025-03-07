@@ -20,7 +20,7 @@ Esta modelagem foi projetada para um sistema de ecommerce completo e otimizado. 
 - `Email`
 - `Telefone`
 - `Senha`
-- FK para Pessoa Física ou Pessoa Jurídica
+- `FK para Pessoa Física ou Pessoa Jurídica`
 
 ### **Pessoa Física**
 - `idPessoaFisica` (PK)
@@ -40,7 +40,7 @@ Esta modelagem foi projetada para um sistema de ecommerce completo e otimizado. 
 - `Bairro`
 - `Cidade`
 - `Estado`
-- Tipo de Endereço (ENUM: Residencial, Comercial, Entrega)
+- `Tipo de Endereço (ENUM: Residencial, Comercial, Entrega)`
 
 ### **Pedido**
 - `idPedido` (PK)
@@ -56,7 +56,7 @@ Esta modelagem foi projetada para um sistema de ecommerce completo e otimizado. 
 
 ### **Status Pedido**
 - `idStatusPedido` (PK)
-- `Descrição` (ENUM: Aguardando Pagamento, Em Transporte, Entregue)
+- `Descrição (ENUM: Aguardando Pagamento, Em Transporte, Entregue)`
 - `FK para Forma de Pagamento e Histórico de Entrega`
 
 ### **Entrega**
